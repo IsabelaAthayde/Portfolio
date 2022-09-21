@@ -1,0 +1,300 @@
+
+body {
+    text-align: center;
+    color: #333333;
+    background-color: #21004b;
+    font-family: 'Roboto', sans-serif;
+}
+nav {
+    position: fixed;
+    background-color: #fcfcfc;
+    /*border-bottom: #21004b solid 4px;*/
+    border-top: #310a64 3px solid;
+    border-bottom: #310a64 4px solid;
+    box-shadow: 0 1px 1px 1px #310a64;
+    width: 100%;
+    line-height: 3;
+    top: 0;
+    z-index: 1;
+}
+  
+nav ul{
+    display: flex;
+    justify-content: right;
+    column-gap: 70px;
+    margin-right: 40px;
+    
+}
+  
+ul li a {
+   text-decoration: none; 
+   color: rgb(58, 58, 58);
+   font-size: 24px;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 600;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+
+  
+
+#welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fcfcfc;
+    padding: 20px;
+    margin: 75px 0px 0px;
+    width: 90%;
+    height: 75%;
+}
+
+h1 {
+    text-align: left;
+    font-size: 3em;
+    color: #303030e5;
+    height: 40%;
+    font-weight: 500;
+}
+
+#skills {
+    text-align: left;
+    font-size: 1.8em;
+    padding-left: 20px;
+    color: #424242bd;
+    border-left: #310a64 6px solid;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+h1, #skills {
+    margin-left: 30px;
+}
+
+#projects {
+    background-color: #fcfcfc;
+    padding: 10rem 2rem;
+    text-align: center;
+    
+}
+
+
+h2 {
+    font-size: 3rem;
+     max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid #21004b;
+    padding-bottom: 25px;
+    
+}
+
+
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  
+}
+
+@media (max-width: 30.625em) {
+    
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+.project {
+    background-color: rgb(43, 35, 75);
+    box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.project-image {
+  height: calc(100% - 4rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+  color: white;
+}
+
+
+hr {
+    border: 4px solid #310a64;
+    margin: 0;
+}
+
+#contact {
+    width: 100%;
+    height: 87vh;
+    background-color: #fcfcfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    
+}
+
+h3 {
+    font-size: 40px;
+    color: #2f2046;
+    line-height: 1;
+    font-weight: 700;
+} 
+
+
+.btn {
+    background-color: #3a2855;
+    color: #fcfcfc;
+    font-size: larger;
+    font-weight: bold;
+    width: 140px;
+    line-height: 2;
+    border: 0;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.btn:hover {
+  cursor: grabbing;
+  background-color:  #2f2046;
+}
+.social-link {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+span {
+  color: #2f2046;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+
+@media (max-width: 920px) and (min-width: 670px) {
+h1 {
+    text-align: center;
+}
+  #skills {
+    font-size: 1.6em;
+  }
+}
+
+
+@media (max-width: 669px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  h1 {
+    height: 40%;
+    text-align: center;
+  }
+  
+  #skills {
+    text-align: center;
+    font-size: 1.5em;
+    border-left: none;
+    border-top: #21004b 5px solid;
+    padding-top: 20px;
+    padding-left: 0;
+    line-height: 1.3;
+  }
+  h1, #skills {
+    margin: 0;
+  }
+}
+
+@media (max-width: 459px) {
+  
+  nav ul {
+    gap: 35px;
+  }
+  
+  .project-title {
+    padding-top: 1.2rem;
+    font-size: 1.1em;
+  }
+  #contact-container {
+    gap: 35px;
+  }
+  h3 {
+    font-size: 1.9em;
+  }
+  .btn {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+    nav ul {
+        display: block;
+        width: 100%;
+        line-height: 1.5;
+      }
+      h1 {
+        font-size: 2.7em;
+      }
+      #skills {
+        font-size: 1.5em;
+      }
+      
+      h2 {
+        font-size: 2em;
+      }
+}
+
+@media (max-width: 229px) {
+    h1 {
+        font-size: 2em;
+    }
+    #skills {
+        font-size: 1.1em;
+        line-height: 1.4;
+    }
+}
