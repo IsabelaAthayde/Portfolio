@@ -76,6 +76,37 @@ export const Container = styled.div`
             }
         }
 
+        @keyframes leftDown {
+            0% {
+            transform: scaleX(1);
+            transform-origin: 0% 0%;
+            }
+
+            25% {
+                transform: scaleX(0);
+                transform-origin: 0% 0%;
+            }
+
+            50% {
+                transform: scaleX(1);
+                transform-origin: 100% 100%;
+            }
+
+            100% {
+                transform: scaleX(0);
+		        transform-origin: 100% 100%;
+            }
+        }
+
+        ul:last-of-type {
+
+            
+                &:hover {
+                    animation: leftDown 2s ease 0s 1 normal forwards;
+                }
+    
+        }
+
         ul {
             height: 100%;
             svg {
@@ -123,7 +154,7 @@ export const Container = styled.div`
         }
 
 
-        #info h1, #info p {
+        #info h1 , #info p {
             min-width: 23.2rem;
             
         }
@@ -133,7 +164,8 @@ export const Container = styled.div`
             font-size: 8vw;
             font-weight: 800;
 
-            margin-bottom: 2.4rem;
+            margin-bottom: 4rem;
+
 
             @media (min-width: 528px) {
                 font-size: 4.2rem;
@@ -185,7 +217,15 @@ export const Container = styled.div`
                 &:hover {
                     transform: scale(1.3);
                     transition: transform 1s ease 0s;
-                    color: ${({theme}) => theme.COLORS.PURPLE_1};
+                }
+
+                a {
+                    color: ${({theme}) => theme.COLORS.WHITE};
+                    text-decoration: none;
+
+                    &:hover {
+                        color: ${({theme}) => theme.COLORS.PURPLE_1};
+                    }
                 }
             }
 
@@ -291,6 +331,10 @@ export const Projects = styled.section`
          span {
             width: fit-content; 
             margin: 0;
+
+            &:hover {
+                color: ${({theme}) => theme.COLORS.PURPLE_1};
+            }
          }
         }
     }

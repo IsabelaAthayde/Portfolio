@@ -1,13 +1,11 @@
 import { RiMoonLine, RiSunLine } from 'react-icons/ri';
 
-import { MultipleBubble, BubbleLeft, BubbleRight } from '../components/Bubble';
 import { OpenTag, CloseTag } from "../components/openCloseTag";
 
 import scale from "../assets/scale.svg";
-
+import curriculo from "../assets/curriculo/curriculo.pdf";
 
 import { Container, Projects, Contacts} from "./styles";
-
 import Carousel from "../components/Carousel/index"
 
 export function Home() {
@@ -34,7 +32,7 @@ export function Home() {
                     </section>
                     
                     <section id="cv">
-                        <h2>CV</h2>
+                    <h2><a href={curriculo} target="_blank" download="isabelaCurriculo.pdf">CV</a></h2>
                         <div className="triangle normal"></div>
                         <div className="triangle delay"></div>
                         <div className="reverse_triangle rev_normal"></div>
@@ -73,21 +71,21 @@ export function Home() {
                         </div>
                         <div className='align b'>
                             <div className="bubble">
-                                <a href="https://www.linkedin.com/in/isabela-de-oliveira-athayde-41730a24b/" target="_blank">
+                                <a href="https://github.com/IsabelaAthayde" target="_blank">
                                     <OpenTag />GitHub<img src={scale} alt="" /><CloseTag />
                                 </a>
                             </div>
                         </div>
                         <div className='align c'>
                             <div className="bubble">
-                                <a href="https://www.linkedin.com/in/isabela-de-oliveira-athayde-41730a24b/" target="_blank">
+                                <a href="mailto:isabelaoa15@gmail.com" target="_blank">
                                     <OpenTag />Email<img src={scale} alt="" /><CloseTag />
                                 </a>
                             </div>
                         </div>
                         <div className='align d'>
                             <div className="bubble">
-                                <a href="https://www.linkedin.com/in/isabela-de-oliveira-athayde-41730a24b/" target="_blank">
+                                <a href="https://www.instagram.com/isabelaxathayde/" target="_blank">
                                 <OpenTag />Instagram<img src={scale} alt="" /><CloseTag />
                                 </a>
                             </div>
