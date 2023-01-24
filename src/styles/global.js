@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
+
 export default createGlobalStyle`
     * {
         margin: 0;
@@ -16,6 +17,8 @@ export default createGlobalStyle`
         box-shadow: inset 0px 4px 100px #131313;
 
         overflow: hidden;
+        
+        
     }
     
     body {
@@ -23,10 +26,15 @@ export default createGlobalStyle`
         color: ${({ theme }) => theme.COLORS.WHITE};
         font-size: 1.6rem;
 
+
         height: 100vh;
         
         overflow-y: scroll;
         overflow-x: hidden;
+
+        body, h1, h2, h3, h4, a, span, strong, p, li, div, section {
+            font-family: 'Roboto Slab', sans-serif;
+        }
         
         &::-webkit-scrollbar {
             width: 7px;
@@ -34,7 +42,6 @@ export default createGlobalStyle`
         
         &::-webkit-scrollbar-track {
             background: #171717;
-
         }
         
         &::-webkit-scrollbar-thumb {

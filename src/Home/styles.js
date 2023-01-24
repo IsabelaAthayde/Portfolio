@@ -119,6 +119,7 @@ export const Container = styled.div`
             list-style: none;
             font-size: 2rem;
             color: ${({theme}) => theme.COLORS.TEXT_DEFAULT};
+            font-family: 'Inter', sans-serif;
 
             &:hover {
             color: ${({theme}) => theme.COLORS.WHITE};
@@ -317,6 +318,7 @@ export const Projects = styled.section`
         margin: 2rem auto;
         width: fit-content;
         font-size: 3rem;
+        font-family: 'Inter', sans-serif;
 
         @media (min-width: 790px) {
          margin: 0;

@@ -2,7 +2,38 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     
+    position: relative;
+    &:hover {
+        #message {
+            display: flex;
+        }
+    }
 
+    > #message {
+        width: fit-content;
+        height: 4rem;
+        padding: 1rem 2.5rem;
+
+        background-color: ${({ theme }) => theme.COLORS.NAV_TRANSPARENT};
+        font-weight: lighter;
+
+        display: flex;
+        place-items: center;
+
+
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 5;
+        display: none;
+
+        h1 {
+        font-weight: 200;
+
+        }
+
+
+    }
     .slick-slider {
 
     position: relative;
@@ -95,6 +126,7 @@ export const Container = styled.div`
     {
     display: block;
     overflow: hidden;
+    width: inherit;
     }
     .slick-slide.slick-loading img
     {
